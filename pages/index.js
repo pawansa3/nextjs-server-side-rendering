@@ -1,11 +1,11 @@
-import Layout from "../components/Layout"
+import Layout from "../components/Layout";
 
 const index = () => {
-    return (
-        <Layout>
-            Hello world!
-        </Layout>
-    )
-}
+  return (
+    <Layout>
+      <div>Hello world!</div>
+    </Layout>
+  );
+};
 
-export default index
+export default index;
