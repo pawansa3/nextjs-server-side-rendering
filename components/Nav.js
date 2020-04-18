@@ -4,14 +4,14 @@ const Nav = () => {
   return (
     <div>
       <Link href="/">
-        <a className="navbar">Home</a>
+        <a className="navigation">Home</a>
       </Link>
       <Link href="/about">
-        <a className="navbar">About</a>
+        <a className="navigation">About</a>
       </Link>
       <style jsx>
         {`
-          .navbar {
+          .navigation {
             color: white;
             padding: 10px;
             display: inline-block;
