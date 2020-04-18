@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
+    "dev:server": "nodemon server.js",
     "start": "next start",
     "build": "next build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,9 +16,11 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.3.5",
     "node-sass": "^4.13.1",
+    "nodemon": "^2.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
