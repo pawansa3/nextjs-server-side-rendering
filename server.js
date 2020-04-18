@@ -14,6 +14,12 @@ app
   .then(() => {
     const server = express();
 
+    server.get("/p/:title", (req, res) => {
+      const postId = parseInt(req.params.title.split("-").pop());
+      const queryParams = { id: postId };
+      app.render(req, res, "/post", queryParams);
+    });
+
     server.get("*", (req, res) => {
       return handle(req, res);
     });

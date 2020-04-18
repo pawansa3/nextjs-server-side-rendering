@@ -1,7 +1,7 @@
 import fetch from "isomorphic-unfetch";
 import Layout from "../components/Layout";
 
-const Posts = (props) => {
+const Post = (props) => {
   const { post } = props;
   return (
     <Layout>
@@ -16,7 +16,7 @@ const Posts = (props) => {
     </Layout>
   );
 };
-Posts.getInitialProps = async (context) => {
+Post.getInitialProps = async (context) => {
   const postId = context.query.id;
   const post = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${postId}`
@@ -28,4 +28,4 @@ Posts.getInitialProps = async (context) => {
   };
 };
 
-export default Posts;
+export default Post;
